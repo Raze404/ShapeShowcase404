@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Shape Viewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="projectName">
+        <h1>ShapeShowcase404</h1>
+    </div>
+    <div id="controls">
+        <button onclick="showShape('cylinder')">Cylinder</button>
+        <button onclick="showShape('cone')">Cone</button>
+        <button onclick="showShape('cube')">Cube</button>
+        <button onclick="showShape('pentagonalPrism')">Pentagonal Prism</button>
+        <button onclick="showShape('hexagonalPrism')">Hexagonal Prism</button>
+        <button onclick="showShape('pentagrammicPrism')">Pentagrammic Prism</button>
+        <button onclick="showShape('triangularPrism')">Triangular Prism</button>
+        <button onclick="showShape('squarePyramid')">Square Pyramid</button>
+        <button onclick="showShape('dodecahedron')">Dodecahedron</button>
+        <button onclick="showShape('torus')">Torus</button>
+        <button onclick="showShape('icosahedron')">Icosahedron</button>
+        <button onclick="showShape('tetrahedron')">Tetrahedron</button>
+        <button onclick="showShape('octahedron')">Octahedron</button>
+    </div>
+    <div id="shapeDetails" style="display: none;">
+        <div id="shapeTitle"></div>
+        <div id="shapeDescription"></div>
+    </div>
+    <div id="animationControls" style="display: none;">
+        <button onclick="startRotation()">Start Rotation</button>
+        <button onclick="pauseRotation()">Pause Rotation</button>
+        <button onclick="resetRotation()">Reset Rotation</button>
+    </div>
+    <button id="returnButton" style="display: none;" onclick="showUI()">Return</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

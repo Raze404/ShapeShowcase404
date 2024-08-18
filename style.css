@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: url('https://www.wallpaperflare.com/search?wallpaper=calm') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#projectName {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #4CAF50; /* Button-like background color */
+    padding: 20px 40px; /* Larger padding for bigger button effect */
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-size: 2.5em; /* Larger font size */
+    cursor: default; /* Indicate it's not clickable */
+    display: block; /* Default to show on the shape select screen */
+    border: 2px solid #388E3C; /* Optional border to enhance button appearance */
+}
+
+#projectName:hover {
+    background: #4CAF50; /* Same background color on hover */
+    color: white; /* Same text color on hover */
+    cursor: default; /* Ensure cursor doesn't change */
+}
+
+#controls {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#controls button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#controls button:hover {
+    background: #45a049;
+}
+
+#shapeDetails {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: none; /* Hidden by default, shown when a shape is displayed */
+}
+
+#shapeTitle {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+#shapeDescription {
+    margin: 10px 0 0;
+    font-size: 1em;
+    color: #666;
+}
+
+#animationControls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    display: none; /* Hidden by default, shown when a shape is displayed */
+    flex-direction: column;
+    align-items: center;
+}
+
+#animationControls button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#animationControls button:hover {
+    background: #45a049;
+}
+
+#returnButton {
+    margin-bottom: 10px; /* Space between RETURN and other buttons */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #2196F3;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#returnButton:hover {
+    background: #1e88e5;
+    color: white;
+}
